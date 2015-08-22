@@ -1,0 +1,40 @@
+/* Base Styles */
+
+@import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+
+* {
+  box-sizing: border-box; 
+}
+
+body{
+	color: #797e83;
+	margin: 0;
+	font-size: 16px;
+	font-family: "Lato","Helvetica",arial,sans-serif;
+	line-height: 1.5;
+}
+
+.container{
+	width: 90%;
+	margin: auto;
+}
+
+@media (min-width: 769px){
+	p{
+		-webkit-column-count: 2;
+		-webkit-column-gap: 2.5em;
+	
+		-moz-column-count: 2;
+		-moz-column-gap: 2.5em;
+	
+		column-count: 2;
+		column-gap: 2.5em;
+	}
+
+}
+
+@media (min-width: 1200px){
+	.container{
+		width: 1000px;
+	}
+}
