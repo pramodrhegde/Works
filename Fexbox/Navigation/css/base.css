@@ -1,4 +1,4 @@
-/* Base Styles */
+/* Base Styles - Mobile First*/
 
 @import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
 
@@ -14,6 +14,17 @@ body{
 	line-height: 1.5;
 }
 
+ul,li{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	color: #656a6e;
+	font-weight: 400;
+	text-decoration: none;
+}
 .container{
 	width: 90%;
 	margin: auto;
