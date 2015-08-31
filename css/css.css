@@ -1,0 +1,147 @@
+@font-face{
+    src:url(../font/Beautiful-ES.ttf);
+    font-family: "Beautiful";
+}
+html,body{
+    background-color: #ef8dbb;
+    color: #141414;
+    font:normal 14px/20px Helvetica, Verdana, Arial, sans-serif;
+    margin:0;
+    padding: 0;
+    text-align: center;
+}
+
+.borderradius #content{
+    border: 1px solid #141414;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+}
+
+#content{
+    width:500px;
+    margin:20px auto 10px;
+    border:2px outset #666;
+    background-color: #ffffff;
+    padding:40px 40px 20px;
+    text-align: left;
+}
+.js #content{
+    position: relative;
+    width: 380px;
+    padding-right: 280px;
+}
+.boxshadow #content {
+    border: none;
+    -webkit-box-shadow: rgba(0,0,0, .5) 3px 3px 6px;
+    -moz-box-shadow: rgba(0,0,0, .5) 3px 3px 6px;
+    box-shadow: rgba(0,0,0, .5) 3px 3px 6px;
+}
+
+h1{
+    color: #e33a89;
+    font: 27px/27px Baskerville, Palatino, Palatino Linotype, Book Antiqua, Georgia, serif;
+    margin: 0;
+    text-shadow: #aaa 5px 5px 5px;
+}
+.fontface h1 {
+ font: 42px/50px Beautiful;
+}
+.about h2{
+    background-image: url(../images/modernizr-logo.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 70px;
+    margin: 0px;
+    width: 200px;
+    text-indent: -9999px;
+}
+
+@-webkit-keyframes spin{
+    0% {-webkit-transform:rotateY(0);}
+    100% {-webkit-transform:rotateY(-360deg);}
+}
+.csstransforms3d.cssanimations section {
+ -webkit-perspective: 1000;
+}
+.csstransforms3d.cssanimations .about h2{
+ background-image: url(../images/modernizr-logo.png);
+ overflow: hidden;
+ -webkit-animation: spin 2s linear infinite;
+}
+
+.about p{
+    font-size: 12px;
+    width:200px;
+    margin: 0px 0px 20px;
+    line-height: 16px;
+}
+.about{
+    float: right;
+    width:200px;
+    text-align: justify;
+}
+.js .about{
+    float: none;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+.feature{
+    font-size: 12px;
+    line-height: 16px;
+}
+
+ol{
+    list-style: none;
+    margin: 0px;
+    line-height: 18px;
+    padding: 0px;
+}
+
+.csscolumns .feature ol{
+ -moz-column-count: 2;
+ -webkit-columns: 2;
+ -o-columns: 2;
+ columns: 2;
+}
+
+no-csscolumns .feature ol{
+ float: left;
+ margin: 0 0 20px;
+}
+
+.no-csscolumns .feature ol li {
+ float: left;
+ width: 180px;
+}
+
+a{
+    color: #941350;
+    font-weight: bold;
+}
+footer{
+    font-style: oblique;
+    font-size: 11px;
+}
+.boxshadow section img{
+    box-shadow:#000 0 0 3px;
+    -webkit-box-shadow:#000 0 0 3px;
+    -moz-box-shadow:#000 0 0 3px;
+}
+.csstransforms section img{
+    position: relative;
+    top: 20px;
+    transform: rotate(5deg);
+    -webkit-transform:rotate(5deg);
+    -moz-transform:rotate(5deg);
+    -o-transform:rotate(5deg);
+}
+.csstransforms3d.cssanimations section img:hover{
+    -webkit-transform:rotateZ(5deg) rotateX(10deg) rotateY(-15deg);
+}
+.csstransforms3d.cssanimations section img{
+    top: 50px;
+    -webkit-transition:-webkit-transform .6s ease-out;
+    -webkit-transform:rotateZ(15deg) rotateX(20deg) rotateY(-25deg);
+}
